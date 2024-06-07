@@ -1,0 +1,38 @@
+<!---Jeremy Dukes-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---This links the CSS stylesheet to the HTML document-->
+    <link rel="stylesheet" href="strings.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Palindrome Challenge</title>
+</head>
+<body>
+    <!---This provides a container for these elements of the html document-->
+    <div class="wrapper">
+        <header>
+            <h1>What's your favorite Palindrome?</h1>
+            <p>
+                A Palindrome is a word, or phrase even, that reads the same backwards and forwards like "Rotor"! 
+            </p>
+        </header>
+        <!--This creates a container specifically for the user input-->
+        <div class="inputs">
+            <input type="text" id="userInput" spellcheck="false" placeholder="ENTER YOUR PALINDROME HERE!"> <br> <br>
+            <button onclick="myPalindrome()"> Submit </button>
+            <button onclick="tryAnotherLoop()">Another One?</button>
+            <button onclick="quitLoop()">Quit</button>
+        </div>
+        <!--Here we're providing a specified area for the message or results to be displayed-->
+        <p class="info-txt" id="result"></p>
+        
+    </div>
+    <!--The script below links the javascript file to the HMTL document-->
+    <script src="strings.js"></script>
+
+</body>
+</html>
